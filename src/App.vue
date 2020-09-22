@@ -2,11 +2,7 @@
   <div id="app">
     <!-- <h1>自己的项目</h1> -->
     <router-view />
-<<<<<<< HEAD
-    <div class="box">hello {{aaa}}</div>
-=======
     <div class="box">hello 狗茜</div>
->>>>>>> 38da803ff1947339360736cc8080614a4146c80f
   </div>
 </template>
 <script>
