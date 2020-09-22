@@ -1,16 +1,16 @@
 <template>
-  <div id="app">
-    <router-view />
+  <div>
+      我的
   </div>
 </template>
+
 <script>
 export default {
-  data() {
-    return {
-    }
-  },
+
 }
 </script>
+
 <style lang="scss">
 
-</style>
+</style>>
+
