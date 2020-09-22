@@ -2,7 +2,7 @@
   <div id="app">
     <!-- <h1>自己的项目</h1> -->
     <router-view />
-    <div class="box">hello 狗禹</div>
+    <div class="box">hello 狗茜</div>
   </div>
 </template>
 <script>
