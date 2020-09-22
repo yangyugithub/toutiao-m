@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="videoIndex">
     视频
   </div>
 </template>
@@ -11,6 +11,9 @@ export default {
 </script>
 
 <style lang="scss">
-
+.videoIndex{
+  font-size: 12px;
+  color: red;
+}
 </style>>
 

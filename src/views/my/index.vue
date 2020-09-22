@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="myIndex">
       我的
   </div>
 </template>
@@ -11,6 +11,9 @@ export default {
 </script>
 
 <style lang="scss">
-
+.myIndex{
+  font-size: 12px;
+  color: red;
+}
 </style>>
 

@@ -7,10 +7,15 @@ import './styles/index.scss'
 
 import Vant from 'vant'
 
+import { Lazyload } from 'vant'
+
 import 'amfe-flexible'
 import 'vant/lib/index.css'
 
 Vue.use(Vant)
+Vue.use(Lazyload, {
+  lazyComponent: true,
+})
 Vue.config.productionTip = false
 
 

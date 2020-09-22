@@ -2,23 +2,24 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 Vue.use(VueRouter)
-
-
-  
-
 // 路由注册表
 const routes = [
+  {
+    path:'/',
+    name:'start',
+    component:()=> import ('@/views/start/index.vue')
+  },
   {
     path:"/login",
     name:"login",
     component:()=> import ('@/views/login/index.vue')
   },
   {
-    path:"",
+    path:"/lay",
     component:()=> import ('@/views/lay/index.vue'),
     children:[
       {
-        path:'/',
+        path:'/home',
         name:"home",
         component:()=> import ('@/views/home/index.vue')
       },

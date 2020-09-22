@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="homeIndex">
       首页
   </div>
 </template>
@@ -11,6 +11,10 @@ export default {
 </script>
 
 <style lang="scss">
-
+.homeIndex
+{
+  font-size: 12px;
+  color: red;
+}
 </style>>
 

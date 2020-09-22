@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="loginIndex">
       登录页面
   </div>
 </template>
@@ -11,6 +11,9 @@ export default {
 </script>
 
 <style lang="scss">
-
+.loginIndex{
+  font-size: 12px;
+  color: red;
+}
 </style>>
 

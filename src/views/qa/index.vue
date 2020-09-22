@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="qaIndex">
       问答
   </div>
 </template>
@@ -11,6 +11,9 @@ export default {
 </script>
 
 <style lang="scss">
-
+.qaIndex{
+  font-size: 12px;
+  color: red;
+}
 </style>>
 
