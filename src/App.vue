@@ -7,7 +7,13 @@
 </template>
 <script>
 export default {
-
+  data() {
+    return {
+      aaa1: "123",
+      aaa2: "123",
+      aaa3: "123",
+    }
+  },
 }
 </script>
 <style lang="scss">
