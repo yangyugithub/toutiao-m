@@ -27,16 +27,22 @@ export default {
 
 <style lang="scss">
 .van-swipe-item img {
-  width: 100%;
-  height:100%;
-}
+      display: block;
+      width: 100%;
+      height:99%;
+      font-size: 0;
+    }
+
 .van-swipe-item{
+    height: 100%;
     position: relative;
+    overflow: hidden;
     .van-button{
         position: absolute;
         bottom: 60px;
         left: 50%;
         margin-left: -45px;
     }
+    
 }
 </style>
