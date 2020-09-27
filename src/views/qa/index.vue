@@ -1,19 +1,25 @@
 <template>
   <div class="qaIndex">
-      问答
+    <van-nav-bar title="问答" />
+    <h2>开发中...</h2>
   </div>
 </template>
-
 <script>
-export default {
-
-}
+export default {};
 </script>
-
 <style lang="scss">
-.qaIndex{
+.qaIndex {
   font-size: 12px;
-  color: red;
+  .van-nav-bar__title {
+    color: white;
+  }
+  .van-nav-bar {
+    background-color: #0c7bec;
+  }
+  h2{
+    color: red;
+    text-align: center;
+  }
 }
 </style>>
 

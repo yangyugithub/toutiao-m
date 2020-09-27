@@ -3,7 +3,7 @@
     <van-pull-refresh v-model="isRefreshLoading" @refresh="onRefresh" :success-text="refreshSuccessText"
   :success-duration="1500">
       <van-list v-model="loading" :finished="finished" finished-text="没有更多了" @load="onLoad">
-        <van-cell v-for="(article,index) in articles" :key="index" :title="article.title" />
+        <van-cell v-for="(article,index) in articles" :key="index" :title="article.title" @click="itemfunction(article)" />
       </van-list>
     </van-pull-refresh>
   </div>
@@ -11,7 +11,6 @@
 
 <script>
 import { getArticles }  from '@/api/article'
-import { log } from 'util';
 export default {
   name: "ArticleList",
   props:{
@@ -32,6 +31,12 @@ export default {
     };
   },
   methods: {
+      itemfunction(idx){
+        // this.$router.push({name:'articleDetails',  query:{article_id:idx.art_id}  })
+        this.$router.push({
+          path: `/articleDetails/${idx.art_id}`,
+        })
+      },
    async onLoad () {
       console.log('onLoad')
       // 1. 请求获取数据
@@ -43,7 +48,7 @@ export default {
     console.log(data);
     
       // 2. 把数据放到 list 数组中
-      const { results } = data.data
+      const { results } = data.data  //[] [] [] [a,b,c]  [a,b,c] [a,b,c] [a,b,c] [1,2,3]
       this.articles.push(...results)
 
       // 3. 设置本次加载状态结束，它才可以判断是否需要加载下一次，否则就会永远的停在这里

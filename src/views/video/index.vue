@@ -1,6 +1,7 @@
 <template>
   <div class="videoIndex">
-    视频
+   <van-nav-bar title="视频" />
+    <h2>开发中...</h2>
   </div>
 </template>
 
@@ -13,7 +14,17 @@ export default {
 <style lang="scss">
 .videoIndex{
   font-size: 12px;
-  color: red;
+ 
+  .van-nav-bar__title {
+    color: white;
+  }
+  .van-nav-bar {
+    background-color: #0c7bec;
+  }
+  h2{
+    color: red;
+    text-align: center;
+  }
 }
 </style>>
 
