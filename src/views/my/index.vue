@@ -2,7 +2,7 @@
   <div class="login_and_register">
     <div class="not_login" v-show="isShows">
       <div class="myIdx_top">
-        <div class="myIdx_top_pos">
+        <div class="myIdx_top_pos" @click="gotoLogin">
           <div class="phone_box" align="center">
             <img src="../../assets/my/phone.png" alt="">
           </div>
@@ -94,12 +94,16 @@
 export default {
   data() {
     return {
-      isShow: true,
-      isShows: false,
+      isShow: false,
+      isShows: true,
     }
   },
+  created() {
+  },
   methods: {
-
+    gotoLogin() {
+      this.$router.push({ name: 'login' })
+    },
   },
 }
 </script>
@@ -172,7 +176,7 @@ export default {
 }
 .myIdx_list {
   width: 100%;
-  padding-left: 20px;
+  padding: 20px;
   box-sizing: border-box;
   color: #333;
   font-size: 16px;
